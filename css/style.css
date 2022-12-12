@@ -10,6 +10,7 @@
 body{
     background-color: #000000;
     color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Utility */
@@ -20,6 +21,7 @@ body{
 
 
 /* header */
+
 section.settings{
     display: flex;
     justify-content: flex-end;
@@ -31,7 +33,32 @@ section.settings{
     border-radius: 5px;
     font-size: 15px;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 /* main section */
+
+main{
+    margin: 3% 0;
+}
+main .windows{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.windows .image{
+    display: flex;
+    align-items: flex-end;
+    background-image: url('https://picsum.photos/200');
+    height: calc(100vh/7 - 10px);
+    width: calc(100vw/7 - 10px - 1%);
+}
+
+.windows .image .user{
+    font-size: 12px;
+    backdrop-filter: blur(50px);
+}
+
+
+
